@@ -20,5 +20,10 @@ column_names = ['age',
 
 heart = pd.read_csv('./heart+disease/processed.cleveland.data', names=column_names)
 print(heart.head())
-print(heart.shape)
+print()
 print(heart.dtypes)
+print()
+# rename the 'num' column to 'heart_disease'
+heart.rename(columns = {'num': 'heart_disease'}, inplace=True)
+print(heart['heart_disease'].value_counts())
+print(heart.columns)
