@@ -21,3 +21,4 @@ column_names = ['age',
 heart = pd.read_csv('./heart+disease/processed.cleveland.data', names=column_names)
 print(heart.head())
 print(heart.shape)
+print(heart.dtypes)
