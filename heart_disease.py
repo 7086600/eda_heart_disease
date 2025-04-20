@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 # column names for the dataset
 # The dataset is from the UCI Machine Learning Repository
@@ -32,6 +33,9 @@ print()
 print(heart.info())
 print()
 
+print(heart[(heart['ca']=='?')])
+# replace '?' with np.nan
+heart = heart.replace('?', np.nan)
 print(heart['ca'].unique())
 print()
 print(heart['thal'].unique())
