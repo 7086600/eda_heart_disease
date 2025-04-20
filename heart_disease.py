@@ -27,3 +27,7 @@ print()
 heart.rename(columns = {'num': 'heart_disease'}, inplace=True)
 print(heart['heart_disease'].value_counts())
 print(heart.columns)
+
+print()
+print(heart.info())
+print()
