@@ -31,3 +31,7 @@ print(heart.columns)
 print()
 print(heart.info())
 print()
+
+print(heart['ca'].unique())
+print()
+print(heart['thal'].unique())
